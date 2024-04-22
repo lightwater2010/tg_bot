@@ -8,11 +8,6 @@ bot = Bot(TOKEN_BOT_WITH_KEYBOARD)
 disp = Dispatcher()
 
 
-
-async def start_app(_):
-    print("Бот был успешно запущен!")
-
-
 async def main():
     disp.include_router(router)
     await disp.start_polling(bot)
